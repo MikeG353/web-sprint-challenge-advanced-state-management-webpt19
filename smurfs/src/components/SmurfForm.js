@@ -5,9 +5,10 @@ import { postNewSmurf } from '../actions'
 
 const SmurfForm = (props) => {
     const [newSmurf, setnewSmurf] = useState({
-        name: 'enter name',
-        age: 'enter age',
-        height: 'enter heign in cm'
+        name: '',
+        age: '',
+        height: '',
+        id: Date.now()
     })
 
     const handleChanges = (e) => {
@@ -25,18 +26,21 @@ const SmurfForm = (props) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <label>Name</label>
             <input
                 onChange={handleChanges}
                 type="text"
                 name="name"
                 value={newSmurf.name}
             />
+            <label>Age</label>
             <input
                 onChange={handleChanges}
                 type="text"
                 name="age"
                 value={newSmurf.age}
             />
+            <label>Height</label>
             <input
                 onChange={handleChanges}
                 type="text"

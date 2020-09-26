@@ -18,3 +18,7 @@
   font-size: 1.5em;
   margin-top: 10px;
 }
+.smurf-form{
+  display: flex;
+  flex-direction: column;
+}
