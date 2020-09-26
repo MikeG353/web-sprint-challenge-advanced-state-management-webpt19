@@ -1,3 +1,20 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: paleturquoise
+}
+.smurf {
+  background-color: powderblue;
+  height: 80%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: (0, 0, 0, 0.7);
+}
+.smurf-name{
+  font-size: 1.5em;
+  margin-top: 10px;
 }
